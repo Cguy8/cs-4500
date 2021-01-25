@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSON Test</title>
+</head>
+<body>
+
+<h1>JSON Test</h1>
+<p>This page tests the "parse" and "stringify" commands.</p>
+
+<!-- stringify object data -->
+<script>
+  myObj = {name: "Colby", age: 21, city: "Lake Arrowhead"};
+  myJSON = JSON.stringify(myObj);
+  localStorage.setItem("testJSON", myJSON);
+</script>
+
+<!-- parse string into object data -->
+<script>
+  text = localStorage.getItem("testJSON");
+  obj = JSON.parse(text);
+  document.getElementById("demo").innerHTML = obj.name;
+</script>
+
+</body>
+</html>
