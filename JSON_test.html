@@ -6,20 +6,25 @@
 <body>
 
 <h1>JSON Test</h1>
-<p>This page tests the "parse" and "stringify" commands.</p>
+<p>This page tests the "parse" and "stringify" commands. If all works correctly, a name should be shown below.</p>
 
-<!-- stringify object data -->
+<p id="name">Unknown</p>
+
 <script>
+
+  var myObj, myJSON, text, obj;
+
+//stringify object data
+
   myObj = {name: "Johnny", age: 26, city: "Station Square"};
   myJSON = JSON.stringify(myObj);
   localStorage.setItem("testJSON", myJSON);
-</script>
 
-<!-- parse string into object data -->
-<script>
+//parse string into object data
+
   text = localStorage.getItem("testJSON");
   obj = JSON.parse(text);
-  document.getElementById("demo").innerHTML = obj.name;
+  document.getElementById("name").innerHTML = obj.name;
 </script>
 
 </body>
