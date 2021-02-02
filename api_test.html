@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>API Test</title>
+</head>
+<body>
+
+<h1>API Test</h1>
+<p>This page tests the "sunrise-sunset" api. If all works correctly, the time of tonight's sunset in Southern California should be shown. The following website's API is used: sunrise-sunset.org/api</p>
+
+<p id="sunset">Unknown</p>
+
+<script>
+  var request = new XMLHttpRequest();
+
+  request.open('GET', 'https://api.sunrise-sunset.org/json?lat=34.3&lng=-117.2&date=today', true);
+  //The unusual behavior of the API cannot be accounted for. It tends to give Sunset times soon after midnight.
+  request.onload = function() {
+	var data = JSON.parse(this.response);
+	console.log(data);
+	document.getElementById("sunset").innerHTML = "Sunset time: " + JSON.stringify(data.results.sunset);
+  }
+  request.send();
+
+
+</script>
+
+</body>
+</html>
