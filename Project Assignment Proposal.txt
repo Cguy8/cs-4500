@@ -1,0 +1,7 @@
+Project type: research and development on a web app for a campus organization.
+
+Platform: web browser. Mobile support may be researched in the future.
+
+Implementation: HTML with Javascript
+
+Next task: research on the Shibboleth IdP system used by the University.
