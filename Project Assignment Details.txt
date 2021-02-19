@@ -1,0 +1,12 @@
+Project type: research and development on a web app for a campus organization.
+
+Project Description:
+Honorsbook is intended to be a platform built specifically for CSUSB students enrolled in the University Honors Program, for the purpose of facilitating connectivity and engagement between students who share similar interests. The app will operate on a system of tags which students will use to identify their own interests. Students will easily be able to identify other students who share a significant number of similar interests. When an event is organized by students or faculty members, the app can be used to identify and contact all students that would likely be interested in that event. Other functions that may be implemented using the same database of information may also be considered during development.
+
+Platform: web browser. Mobile support may be researched in the future.
+
+Implementation: HTML with Javascript
+
+Current tasks: Continue research on the Shibboleth IdP system used by the University. Continue work on the project SRS.
+
+Next task: Work on implementation of tagging system.

@@ -1,0 +1,16 @@
+Report 2/18/21
+
+The university "myCoyote" system uses a single sign-on program, SSO, hosted by Shibboleth IdP. Shibboleth is an implementation of the Security Assertion Markup Language 2.0, or SAML2, which is a standard for the exchange of XML documents between a service provider, such as the University's myCoyote, and an identity provider, such as Shibboleth IdP. By communicating with an identity provider in this way, the service provider can obtain basic information about the user, such as the student's name, CoyoteID, and email address, without ever dealing with the user's password or other secure information.
+
+In order to interact with the Shibboleth Identity Provider, the service provider, that being the HonorsBook program in my case, must have downloaded the Shibboleth Service Provider package, which has been done in my local copy of the app. Once the package is included, the configuration must be modified to match the specific app being developed. This information is contained in the shibboleth2.xml file, much of which has already been modified appropriately using the app's URL, as well as the EntityID and metadata source used by the university system.
+
+At this point, the information available to me begins to exceed my level of understanding. By my understanding, there are two important steps remaining. Firstly, my app's metadata must be added to the metadata feed used by the university. This would require me to generate the app's metadata, which I am still unsure of how to do. Then I may either submit that data along with the app's URL to the InCommon Federation, which I know very little about, or submitting the data directly to the university by including it in a BitBucket pull request, which I would feel more comfortable doing, assuming that I had that data to give and understood what to do with it. Secondly, once the metadata is where it belongs, the app would have to be programmed with an automatic redirect to the Shibboleth IdP for login. Shibboleth would automatically redirect the user back to the app once they have signed in, and the user's id can then be read to show them their appropriate profile within the app. I have yet to find any information regarding how this would be accomplished. I am unsure of if a simple HTML redirect command to a particular URL would be sufficient, or if additional data must be sent at the same time. Either way, I can't seem to find what that URL would be.
+
+These two steps may be the primary focus of my research in the immediate future.
+
+Unfortunately, as our team has recently lost a member, there is a likelihood that this pursuit may be dropped in order to save time. If that is the case, my next task will most likely be work on the planned tagging system, in addition to continued work on the Software Requirements Specification Document.
+
+Sources:
+https://slack-files.com/T0YRQHDC1-FLW61AUL9-aaf4d1eefb
+https://wiki.shibboleth.net/confluence/display/SP3/Home
+https://spaces.at.internet2.edu/display/federation/
