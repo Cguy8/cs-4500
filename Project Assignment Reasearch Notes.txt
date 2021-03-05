@@ -1,3 +1,19 @@
+Report 3/4/21
+Because the server for our web app is maintained by the university, some unique steps are required to establish and maintain a database through the app. I, and other developers on the team, must install a database management application, such as mySQL Workbench. Our project advisor, the faculty member who established the space where the app is being hosted, will need to create the databse through the cPanel system where the web page is managed. They must then use cPanel to whitelist the IP addresses of myself and the other developers.
+
+I have provided my IP address and database account information to the advisor. I have also installed mySQL Workbench, and begun experimenting with its basic functions.
+
+From here, some modifications will need to be made to the project files in order to access the database, which is planned to be worked on in the coming weeks.
+
+Some time was also spent researching recent standards for SRS documents to ensure that our own is formatted correctly. I was surprised to find that the standards have not been modified in quite a long time. Formatting has been done, but the document is not yet in a presentable state, and has not been included.
+
+Sources:
+https://www.hostgator.com/help/article/how-do-i-create-a-mysql-database-a-user-and-then-delete-if-needed
+https://www.hostgator.com/help/article/managing-your-database-with-applications
+https://www.hostgator.com/help/article/how-to-connect-to-the-mysql-database
+https://www.mysql.com/products/workbench/
+http://www.cse.msu.edu/~cse870/IEEEXplore-SRS-template.pdf
+
 Report 2/18/21
 
 The university "myCoyote" system uses a single sign-on program, SSO, hosted by Shibboleth IdP. Shibboleth is an implementation of the Security Assertion Markup Language 2.0, or SAML2, which is a standard for the exchange of XML documents between a service provider, such as the University's myCoyote, and an identity provider, such as Shibboleth IdP. By communicating with an identity provider in this way, the service provider can obtain basic information about the user, such as the student's name, CoyoteID, and email address, without ever dealing with the user's password or other secure information.
