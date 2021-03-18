@@ -1,3 +1,16 @@
+Report 3/18/21
+After some failed experimentation and multiple technical issues with mySQL, the group agreed to switch over to Google Firebase as an alternative database management system. Firebase is expected to have better integration with HTML/Javascript, and a more straightforward set of tools for creating and managing the database which won't require the advisor to act as a go-between. Work on a user login system via Firebase Authentication has begun. An example of its implementation has been provided by team member Samuel J., included in the sources below.
+
+Firebase Firestore is being used to store the data that logged-in users will be able to access. Firestore databases store information as a collection of documents, each of which contains a set of key-value pairs. This data can be accessed either directly through Firebase's front-end SDK, or through through HTML/Javascript calls, which we can implement into our web page.
+
+Time has also been spent working on the project SRS, an incomplete version of which has now been included in the repository.
+
+Sources:
+https://sliceofblue-d8622.firebaseapp.com/
+https://firebase.google.com/
+https://www.youtube.com/watch?v=aN1LnNq4z54&list=PL4cUxeGkcC9jUPIes_B8vRjn1_GaplOPQ
+https://www.youtube.com/watch?v=4d-gIPGzmK4&list=PL4cUxeGkcC9itfjle0ji1xOZ2cjRGY_WB
+
 Report 3/4/21
 Because the server for our web app is maintained by the university, some unique steps are required to establish and maintain a database through the app. I, and other developers on the team, must install a database management application, such as mySQL Workbench. Our project advisor, the faculty member who established the space where the app is being hosted, will need to create the databse through the cPanel system where the web page is managed. They must then use cPanel to whitelist the IP addresses of myself and the other developers.
 

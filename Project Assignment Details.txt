@@ -7,6 +7,6 @@ Platform: web browser. Mobile support may be researched in the future.
 
 Implementation: HTML with Javascript
 
-Current tasks: Continue work on connecting to and formatting project database. Continue work on the project SRS.
+Current tasks: Continue work on connecting to and formatting project database through Google FireBase. Continue work on the project SRS.
 
 Next task: Work on implementation of tagging system.
