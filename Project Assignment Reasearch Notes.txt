@@ -1,3 +1,8 @@
+Report 4/1/21
+Most project time was spent preparing and practicing for an upcoming presentation of the project. The slideshow has been included. The SRS has also been worked on and updated.
+
+Other team members have been putting together the beginnings of the login page for the project, which has been included.
+
 Report 3/18/21
 After some failed experimentation and multiple technical issues with mySQL, the group agreed to switch over to Google Firebase as an alternative database management system. Firebase is expected to have better integration with HTML/Javascript, and a more straightforward set of tools for creating and managing the database which won't require the advisor to act as a go-between. Work on a user login system via Firebase Authentication has begun. An example of its implementation has been provided by team member Samuel J., included in the sources below.
 
