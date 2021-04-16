@@ -1,0 +1,42 @@
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*Navbar*/
+.navbar {
+    background-color: rgb(243, 224, 200);
+    position: fixed;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    height: 10vh;
+    align-items: center;
+    flex-direction: row;
+}
+
+li {
+    padding-left: 82px;
+    color: white;
+}
+
+.navlink:visited {
+    color: white;
+}
+
+#HonorsBook{
+    font-size: 45px;
+    color:black;
+}
+
+#home,
+#myProfile,
+#share,
+#help{
+    font-size: 18px;
+    color:black;
+}
