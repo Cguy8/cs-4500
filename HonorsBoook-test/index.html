@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HonorsBook Login </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="login-form.css">
+
+        <!--!!!!!!!!THIS IS THE FIREBASE HEADER,  ADD THIS TO EVERY WEB PAGE!!!!!!!!!-->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+
+        <!-- Loads firebase authentication services -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+        <!-- Loads firebase firestore services -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                apiKey: "AIzaSyBPe_zGZ1DSaUYGKRvRdx5GvkxPxOALyBs",
+                authDomain: "hbtesting-30295.firebaseapp.com",
+                projectId: "hbtesting-30295",
+                storageBucket: "hbtesting-30295.appspot.com",
+                messagingSenderId: "458754653324",
+                appId: "1:458754653324:web:fc7a08943b50bf6e37cfa9",
+                measurementId: "G-Y5JZYGD4GD"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+            const db = firebase.firestore(); //used to initialize our database object we'll be refering to
+            const auth = firebase.auth(); //initializes our authorization sdk
+        </script>
+        <!--!!!!!!!!END OF FIREBASE HEADER!!!!!!!!!-->
+
+        <script src="login-page-script.js" defer></script>
+    </head>
+
+    <body> 
+        <!--SignUp Form-->
+        <div id="logininfo" >
+            <form id="loginform">Welcome back to HonorsBook!<br> Log In to see what's new.<br><br>
+                <div id= "username"> <a> Username/Email:</a></div>
+                <input type="text" id="loginUsername" class="input" ><br><br>
+                <div id= "password"> <a> Password:</a></div>
+                <input type="password" id="loginPassword" class="input" ><br><br>
+                <div id="login" ><a id="loginButton">Log In</a></div>
+                <div id="signup"><a class="navlink visited-color-white" href="signup-form.html">Sign Up</a></div>
+            </form>
+        </div>
+    </body>
+</html>

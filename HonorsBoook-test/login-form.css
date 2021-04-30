@@ -28,14 +28,17 @@
     
 }
 
-#login{
-    font-size: 25px;
+#login,
+#signup{
+    font-size: 20px;
+    padding: 7px;
+    background-color: rgb(0, 94, 184);
+    border-radius: 40px;
+    width: 100px;
+    margin-left: 43%;
+    margin-top: 15px;
 }
 
-#signup{
-    margin-top: 10px;
-    font-size: 25px;
-}
 
 body{
     background-image: url("../images/coffee\ with\ laptop.jpg");
