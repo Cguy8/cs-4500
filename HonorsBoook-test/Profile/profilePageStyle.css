@@ -10,12 +10,12 @@
         margin-top: 50px;
         width:50%;
     }
+
     .boxes {
         height: 300px;
         min-width: 270px;
         background-color: #D7D4C2;   
         display: flex;   
-
     }
 
     .content{
@@ -40,6 +40,15 @@
         padding:5px;
         margin-left: 75%;
         margin-top: -27%;
+        border-radius: 40px;
+        background: rgb(38, 108, 212);
+    }
+
+    .tag
+    {
+        color:white;
+        margin-left: .5%;
+        padding:5px;
         border-radius: 40px;
         background: rgb(38, 108, 212);
     }

@@ -1,3 +1,16 @@
+Report 5/13/21
+Development on the first prototype has been completed. My own research, focusing on the concepts of dynamically creating and modifying HTML elements and event listeners, was applied primarily to the js scripts for the "home" page and the "interests" page.
+
+The javascript language has many built-in handlers for interacting with HTML elements. Any element which already exists on the page can be addressed using its provided id. Once the object has been identified, it can be deleted through object.remove(), or its children can be deleted any number of times through object.removeChild(object.firstChild). A new element can be created through document.createElement("type"), and such created elements can be parented to one another or to existing elements through parent.appendChild(child). An object which has been identified can also have an event listener added prior to its placement on the web page through object.eventListener("type", (event) => ...
+
+All of this information was able to be integrated in straighforward ways with information learned about Firebase in previous research to create a system which communicates directly between the user and the database.
+
+The SRS has also been updated.
+
+Sources:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+https://www.javascripttutorial.net/dom/manipulating/remove-all-child-nodes/
+
 Report 4/29/21
 Research has continued on Firebase Authentication features and implementation. My own research was applied to create the "profile-page-edit-script" file, which communicates directly with the database using authenticated user information. Additionally, a rough draft of the SRS has been completed. All changes are included.
 

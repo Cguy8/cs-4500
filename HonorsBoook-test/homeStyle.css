@@ -70,4 +70,8 @@
 
 .content-3{
     height: 83%;
+    max-height: 250px;
+				overflow-x: hidden;
+				overflow-y: auto;
+				text-align: justify;
 }

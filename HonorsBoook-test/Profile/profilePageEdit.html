@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>HonorsBook</title>
-        
-        <link rel="stylesheet" href="navstyle.css">
-        <link rel="stylesheet" href="homeStyle.css">
-        <link rel="stylesheet" href="style.css">
+        <title>HonorsBook Profile</title>
+        <link href="profilePageStyle.css" rel="stylesheet">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../navstyle.css">
 
         <!--!!!!!!!!THIS IS THE FIREBASE HEADER,  ADD THIS TO EVERY WEB PAGE!!!!!!!!!-->
         <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -40,18 +39,18 @@
         </script>
         <!--!!!!!!!!END OF FIREBASE HEADER!!!!!!!!!-->
 
-        <script src="home-script.js" defer></script>
-        <script src="user-check-script.js"></script>
-        <script src="sign-out-script.js" defer></script>
-        <script src="help.js" defer></script>
+        <script src="profile-page-edit-script.js" defer></script>
+        <script src="../user-check-script.js" defer></script>
+        <script src="../sign-out-script.js" defer></script>
+        <script src="../help.js" defer></script>
     </head>
 
     <body>
         <!--NAVBAR-->
         <nav class="navbar background-color-coyoteblue">
             <ul class="left-aligned-div flex-direction-row">
-                <li id="home"><a class="color-black" href="home.html">Home</a></li>
-                <li id="myProfile"><a class="color-black" href="Profile/profilePage.html">My Profile</a></li>
+                <li id="home"><a class="color-black" href="../home.html">Home</a></li>
+                <li id="myProfile"><a class="color-black" href="profilePage.html">My Profile</a></li>
                 <li id="share"><a>Share</a></li>
                 <li id="help"><a>Help</a></li>
                 <li id="signout"><a class="color-black">Logout</a></li>
@@ -59,40 +58,33 @@
             </ul>
         </nav>
 
-        <!--WELCOME BACK BANNER-->
-        <div class="Welcome">
-            <form id="welcomeback">
-                <img src="images/laptop.jpg" height=475px width=100%>
-            </form>
-        </div>
-
-        <!--GRID-->
-        <div class="grid-container">
-            <div class="grid-item item-1">
-                This week's messages from: University Honors Program Staff
-                <div class="grid-content content-1">
-                </div>
+        <!--Profile Info-->>
+        <div class="box">
+            <div class="box-img">
+                <img src="../images/university student.jpg">
             </div>
-            <div class="grid-item item-2">
-                Notifications
-                <div class="grid-content content-2">
-                </div>
+            <div class="content">
+                <h1 id="name">[Name]</h1><br>
+                <p id="major"> Major: <input id="majorInput" value="Not Yet Set"></input> </p><br>
+                <p id="year">Year: <input id="yearInput" value="Not Yet Set"></input> </p><br>
+                <p id="Prefered Pronouns">Preferred Pronouns: <input id="pronoundsInput" value="Prefer not to say"></input></p><br><br>
+                <p id="tags">No tags</p>
+                <br>
+                <a class="color-black visited-color-black" href="../interests.html">Add Tags</a>
             </div>
-            <div class="grid-item item-3">
-                On Your Radar
-                <div class="grid-content content-3" id="on-your-radar">
-			<div id="profile-container">
-				<div class="profile-pic">
-					<img src="images/profile-thumb.jpg">
-					<div class="profile-text-1">
-					loading...
-					</div>
-					<div class="profile-text-2">
-					loading...
-					</div>
-				</div>
-			</div>
-                </div>
+            <div class="biography">
+                <textarea name="bio" rows="8" cols="80" id="bio">loading...</textarea><br><br>
+                <input type="submit" id="submitButton">
+                <!--
+                <p>
+                    Hi everyone! I'm Ynez! I'm a Biology student and I'm so excited to be an honors student! I'm pretty
+                    introverted so this is a bit scary, but I really want to make friends so, hello! If you're interested
+                    in Biology, or medicine, or just interested in making friends, send me a message! I'd love to meet you!
+                </p>
+                -->
+            </div>
+            <div class="request">
+                <p> + Add Connection</p>
             </div>
         </div>
     </body>

@@ -8,6 +8,6 @@ auth.onAuthStateChanged(user =>
     }else{
         //user is logged out
         console.log("There is no user logged in");
-        window.location.href = "index.html";
+        window.location.href = window.location.origin + "/index.html";
     }
 });

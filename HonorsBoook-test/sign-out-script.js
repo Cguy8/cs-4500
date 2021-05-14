@@ -1,3 +1,5 @@
+const logout = document.querySelector("#signout");
+
 //function will use firebase auth to log the user out
 function Log_Out()
 {

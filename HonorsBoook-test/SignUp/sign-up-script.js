@@ -56,7 +56,10 @@ function Create_User(uID, useNam, email)
         dateJoined: date,
         admin: false,
         userTags: tags,
-        firstTime: true
+        firstTime: true,
+        major: "Not Yet Set",
+        year: "Not Yet Set",
+        pronouns: "Prefer not to say"
         
     }).then((docRef) => {
         console.log("Document written with ID: ", docRef.id);
@@ -64,7 +67,7 @@ function Create_User(uID, useNam, email)
         signUpEmailInput.value = "";
         signUpPasswordInput.value = "";
         signUpPasswordInput2.value = "";
-        window.location.href = "home.html";
+        window.location.href = "../home.html";
         alert("Signed up Succesffuly");
         
     }).catch((error) => {

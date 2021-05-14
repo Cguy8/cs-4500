@@ -3,9 +3,8 @@
     <head>
         <title>HonorsBook Profile</title>
         <link href="profilePageStyle.css" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="navstyle.css">
-
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../navstyle.css">
 
         <!--!!!!!!!!THIS IS THE FIREBASE HEADER,  ADD THIS TO EVERY WEB PAGE!!!!!!!!!-->
         <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -40,18 +39,21 @@
         </script>
         <!--!!!!!!!!END OF FIREBASE HEADER!!!!!!!!!-->
 
-        <script src="profile-page-edit-script.js" defer></script>
-
+        <script src="../user-check-script.js" defer></script>
+        <script src="../sign-out-script.js" defer></script>
+        <script src="../help.js" defer></script>
+        <Script src="profile.js" defer></Script>
     </head>
 
     <body>
         <!--NAVBAR-->
         <nav class="navbar background-color-coyoteblue">
             <ul class="left-aligned-div flex-direction-row">
-                <li id="home"><a>Home</a></li>
-                <li id="myProfile"><a>My Profile</a></li>
+                <li id="home"><a class="color-black" href="../home.html">Home</a></li>
+                <li id="myProfile"><a class="color-black" href="profilePage.html">My Profile</a></li>
                 <li id="share"><a>Share</a></li>
                 <li id="help"><a>Help</a></li>
+                <li id="signout"><a class="color-black">Logout</a></li>
                 <li id="HonorsBook">HonorsBook</a></li>
             </ul>
         </nav>
@@ -60,27 +62,20 @@
         <!--Profile Info-->>
         <div class="box">
             <div class="box-img">
-                <img src="images/university student.jpg">
+                <img src="../images/university student.jpg">
             </div>
             <div class="content">
-                <h1>Ynez Reyes</h1>
-                <p><br>Biology</p>
-                <p><br>Freshman</p>
-                <p><br>She / Her </p>
-                <p><br><br>Interests: #biology, #medicine, #neuroscience, #chemistry, #biochemistry, #astrobiology,
-                    #discoverychannel, #nature</p>
+                <h1 id="name"> [name] </h1><br>
+                <p id="major"> [major] </p><br>
+                <p id="year"> [year] </p><br>
+                <p id="pronouns"> [pronouns] </p><br><br>
+                <p id="tags">No tags
+                </p>
             </div>
             <div class="biography">
-                <textarea name="bio" rows="8" cols="80" id="bio">loading...</textarea><br><br>
-                <input type="submit" id="submitButton">
-                <!--
-                <p>
-                    Hi everyone! I'm Ynez! I'm a Biology student and I'm so excited to be an honors student! I'm pretty
-                    introverted so this is a bit scary, but I really want to make friends so, hello! If you're interested
-                    in Biology, or medicine, or just interested in making friends, send me a message! I'd love to meet you!
-                </p>
-                -->
+                    [Empty biography]
             </div>
+            <a href="profilePageEdit.html">Edit</a>
             <div class="request">
                 <p> + Add Connection</p>
             </div>

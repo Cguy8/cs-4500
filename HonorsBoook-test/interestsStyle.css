@@ -1,0 +1,62 @@
+.box{
+    height:80vh;
+    width:150vh;
+    background-color:white;
+    margin-left: 11%;
+    box-shadow: 1px 1px 9px 8px #D3D3D3;
+    position: relative;
+    margin-top: 105px;
+  }
+
+  #title{
+      font-size:30px;
+      margin-left: 30%;
+      padding: 10px;
+   }
+
+   #subtitle{
+       font-size: 20px;
+       margin-left: 40%;
+       padding: 7px;
+   }
+
+  b{
+      width:175px;
+      display:inline-block;
+      margin: 3% 1px;
+      padding: 20px 0px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      color:rgb(0, 94, 184);
+      background: rgb(214, 214, 214);
+      border-radius: 50px;
+      margin-left: 40px;
+
+  }
+
+  #tag{
+      font-size: 20px;
+      margin-left: 46%;
+  }
+
+  #searchbox{
+      width:50%;
+      margin-left: 25%;
+      padding: 7px;
+  }
+
+  #searchbox input,button{
+      width:73%;
+      border: 2px solid black;
+      border-radius: 30px;
+      font-size: 15px;
+      padding:10px;
+      background: transparent;
+  }
+
+  #searchbox button{
+      width:115px;
+      float:right;
+
+  }
